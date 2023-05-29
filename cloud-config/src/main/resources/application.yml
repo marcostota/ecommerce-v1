@@ -1,0 +1,14 @@
+server:
+   port: 9296
+   
+management:
+   endpoints:
+      web:
+         exposure:
+            include: "*"
+   health:
+      circuitbreakers:
+         enabled: true
+   endpoint:
+      health:
+         show-details: always
